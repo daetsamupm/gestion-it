@@ -14,8 +14,7 @@ logs = logs.splitlines()
 
 
 def vaciar_tabla(tabla):
-    cantidad_filas = tabla.rowCount()
-    for fila in range(cantidad_filas):
+    for fila in range(tabla.rowCount()):
         tabla.removeRow(fila)
 
 # TODO: Mejorar la logica de negocios de la parte de comprobaciones y de generar tabla
