@@ -26,9 +26,9 @@ class MainWindow(QMainWindow, mainui.Ui_Main):
         self.twifi.setHorizontalHeaderItem(1, QTableWidgetItem("Tipo Acceso"))
         self.twifi.setHorizontalHeaderItem(2, QTableWidgetItem("Usuario"))
 
-        self.twifi.setColumnWidth(0, 120)
+        self.twifi.setColumnWidth(0, 130)
         self.twifi.setColumnWidth(1, 150)
-        self.twifi.setColumnWidth(2, 199)
+        self.twifi.setColumnWidth(2, 185)
 
         self.btnAccesos.clicked.connect(self.get_wifi_access)
 
