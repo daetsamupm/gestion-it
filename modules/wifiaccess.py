@@ -1,9 +1,11 @@
 import re
 from PyQt5.QtWidgets import QTableWidgetItem
 import os
-from settings import PATH_MODULES
-path = os.path.dirname(os.path.realpath('wifi.py'))
-LOGS = os.path.join(PATH_MODULES, "wifidaetsam.log")
+from settings import PATH_MODULES, DEBUG
+
+if DEBUG:
+    path = os.path.dirname(os.path.realpath('wifi.py'))
+    LOGS = os.path.join(PATH_MODULES, "wifidaetsam.log")
 
 p = re.compile(u'.*(AUTH: RADIUS).*')
 
